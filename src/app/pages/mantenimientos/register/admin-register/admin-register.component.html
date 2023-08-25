@@ -1,0 +1,41 @@
+<p class="titulo">{{ titulo }}</p>
+<form [formGroup]="usuariosForm.baseForm">
+  <mat-form-field>
+    <mat-label>IdPersona</mat-label>
+    <input matInput formControlName="IdPersona" [readonly]="!isCreate" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Identificacion</mat-label>
+    <input matInput formControlName="Identificacion" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input type="string" matInput formControlName="Nombre" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Primer apellido</mat-label>
+    <input type="string" matInput formControlName="Apellido1" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Segundo Apellido</mat-label>
+    <input type="date" matInput formControlName="Apellido2" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Genero</mat-label>
+    <input type="email" matInput formControlName="Genero" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Fecha de Nacimiento</mat-label>
+    <input type="string" matInput formControlName="FechaNacimiento" />
+  </mat-form-field>
+
+<div>
+  <button mat-button color="primary" [mat-dialog-close]="true" (click)="guardar()">Guardar</button>
+  <button mat-button color="danger" mat-dialog-close>Cerrar</button>
+</div>
+

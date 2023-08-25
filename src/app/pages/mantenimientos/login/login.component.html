@@ -1,0 +1,52 @@
+<div class="contenedor">
+  <div class="backbox">
+    <div class="textcontent">
+      <h1 class="title">BIENVENIDO</h1>
+      <span class="pie1">
+        2010-2019-DGTL Vez.Q.D Universidad Técnica Nacional
+      </span>
+      <span class="pie2">
+        Términos de uso y políticas de privacidad.
+      </span>
+    </div>
+  </div>
+  
+  <div class="frontbox">
+    <div class="login">
+      <form class="custom-form" method="post">
+        <img class="fotoU" src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Universidad_T%C3%A9cnica_Nacional_de_Costa_Rica_logo.jpg" alt="UTN">
+        <p class="ingresos">Seleccione el método de ingreso:</p>
+        <div class="checkbox-container">
+          <label class="checkbox-label">
+            <input type="checkbox" name="option" id="contrasenaCheckbox" checked>
+            <span>Contraseña</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="option" id="firmaDigitalCheckbox">
+            <span>Firma digital</span>
+          </label>
+        </div>
+        <input
+          type="text"
+          [(ngModel)]="IdPersona"
+          name="text"
+          placeholder="Usuario"
+          required="required"
+        />
+        <input
+          type="password"
+          [(ngModel)]="Clave"
+          name="password"
+          placeholder="Contraseña"
+          required="required"
+        />
+        <a class="registro" routerLink="/registro">REGISTRARME</a>
+        <button type="submit" class="btn btn-primary btn-lg" (click)="login()">Ingresar</button>
+        <a class="forget" routerLink="">¿Olvido su contraseña?</a>
+        <img class="fotoEdit" src="https://cdn.icon-icons.com/icons2/2011/PNG/512/edit_document_file_icon_123491.png" alt="UTN">
+      </form>
+    </div>
+  </div>
+</div>
+
+
