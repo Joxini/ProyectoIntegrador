@@ -4,6 +4,11 @@ import { AppDataSource } from "../data-source";
 
 
 
+/* La `clase ExpedienteEstudianteController` define una clase de controlador para manejar solicitudes
+relacionadas con la entidad `ExpedienteEstudiante`. Contiene métodos estáticos para manejar
+diferentes operaciones CRUD, como obtener todos los registros de "ExpedienteEstudiante", obtener un
+registro específico por ID, agregar un nuevo registro, actualizar un registro existente y eliminar
+un registro. */
 class ExpedienteEstudianteController{
 
     static getAll = async (req: Request, resp: Response)=>{

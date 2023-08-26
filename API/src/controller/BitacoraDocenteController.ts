@@ -3,7 +3,15 @@ import { Request, Response } from "express";
 import { BitacoraDocente } from "../entity/bitacoraDocente";
 import { AppDataSource } from "../data-source";
 
+/* La `clase BitacoraDocenteController` define una clase de controlador para manejar solicitudes
+relacionadas con la entidad `BitacoraDocente`. Contiene métodos estáticos para manejar diferentes
+operaciones CRUD, como obtener todos los registros `BitacoraDocente`, obtener un registro
+`BitacoraDocente` específico por ID, agregar un nuevo registro `BitacoraDocente`, actualizar un
+registro `BitacoraDocente` existente y eliminar un registro `BitacoraDocente` registro. */
+
 class BitacoraDocenteController{
+/* El método `getAll` es un método estático de la clase `BitacoraDocenteController`. Se utiliza para
+manejar la solicitud HTTP GET para recuperar todos los registros de la entidad `BitacoraDocente`. */
 
     static getAll = async (req: Request, resp: Response)=>{
 
@@ -23,6 +31,9 @@ class BitacoraDocenteController{
     }
 
 
+    /* El método `static getById` es un método estático de la clase `BitacoraDocenteController`. Se
+    utiliza para manejar la solicitud HTTP GET para recuperar un registro `BitacoraDocente`
+    específico por su ID. */
     static getById = async (req: Request, resp: Response)=>{
 
       try {
@@ -54,6 +65,11 @@ class BitacoraDocenteController{
         
     }
 
+    /* El método `static delete` es un método estático de la clase `BitacoraDocenteController`. Se
+    utiliza para manejar la solicitud HTTP DELETE para eliminar un registro específico
+    `BitacoraDocente` por su ID. El método toma los objetos `req` (solicitud) y `resp` (respuesta)
+    del marco Express.
+    indicando si la eliminación fue exitosa o no. */
     static delete = async (req: Request, resp: Response)=>{
 
       let IdBitacora;

@@ -2,6 +2,12 @@ import { Request, Response } from "express";
 import { Encargado } from "../entity/encargado";
 import { AppDataSource } from "../data-source";
 
+/* La `clase EncargadoController{` define una clase de controlador para manejar solicitudes
+relacionadas con la entidad "Encargado". Contiene métodos estáticos para manejar diferentes
+operaciones CRUD, como obtener todos los encargados, obtener el encargado por ID, agregar un nuevo
+encargado, actualizar un encargado existente y eliminar un encargado. Estos métodos se utilizan para
+manejar solicitudes HTTP e interactuar con la fuente de datos (base de datos) para realizar las
+operaciones correspondientes sobre la entidad "Encargado". */
 class EncargadoController{
 
     static getAll = async (req: Request, resp: Response)=>{

@@ -2,6 +2,10 @@ import { Request, Response } from "express";
 import { Cuatrimestre } from "../entity/cuatrimestre";
 import { AppDataSource } from "../data-source";
 
+/* La `clase CuatrimestreController` define una clase de controlador para manejar solicitudes
+relacionadas con entidades `Cuatrimestre`. Contiene métodos estáticos para manejar diferentes
+métodos HTTP como `getAll`, `getById`, `add`, `update` y `delete`. Estos métodos son responsables de
+interactuar con la base de datos y devolver respuestas apropiadas al cliente. */
 class CuatrimestresController{
 
     static getAll = async (req: Request, resp: Response)=>{

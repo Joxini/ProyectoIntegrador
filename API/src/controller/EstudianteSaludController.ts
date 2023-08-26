@@ -2,6 +2,12 @@ import { Request, Response } from "express";
 import { EstudianteSalud } from "../entity/estudianteSalud";
 import { AppDataSource } from "../data-source";
 
+/* La `clase EstudianteSaludController` está definiendo una clase de controlador para manejar
+solicitudes relacionadas con la entidad `EstudianteSalud`. Contiene métodos estáticos para manejar
+diferentes operaciones CRUD, como obtener todos los registros de "EstudianteSalud", obtener un
+registro de "EstudianteSalud" específico por ID, agregar un nuevo registro de "EstudianteSalud",
+actualizar un registro de "EstudianteSalud" existente y eliminar un registro de "EstudianteSalud".
+registro. */
 class EstudianteSaludController{
 
     static getAll = async (req: Request, resp: Response)=>{

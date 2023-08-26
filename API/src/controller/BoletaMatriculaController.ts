@@ -5,6 +5,9 @@ import { AppDataSource } from "../data-source";
 
 class BoletaMatriculaController{
 
+    /* El método `static getAll` es un método estático de la clase `BoletaMatriculaController`. Se
+    utiliza para manejar la solicitud HTTP GET para recuperar todos los objetos `BoletaMatricula` de
+    la base de datos. */
     static getAll = async (req: Request, resp: Response)=>{
 
         try {
@@ -23,6 +26,9 @@ class BoletaMatriculaController{
     }
 
 
+    /* El método `static getById` es un método estático de la clase `BoletaMatriculaController`. Se
+    utiliza para manejar la solicitud HTTP GET para recuperar un objeto `BoletaMatricula` específico
+    de la base de datos. */
     static getById = async (req: Request, resp: Response)=>{
 
         try {
@@ -54,6 +60,9 @@ class BoletaMatriculaController{
         
     }
 
+    /* El método `static delete` es un método estático de la clase `BoletaMatriculaController`. Se
+    utiliza para manejar la solicitud HTTP DELETE para eliminar un objeto `BoletaMatricula`
+    específico de la base de datos. */
     static delete = async (req: Request, resp: Response)=>{
 
         let boleta;

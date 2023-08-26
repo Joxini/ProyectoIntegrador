@@ -2,6 +2,11 @@ import { Request, Response } from "express";
 import { EvaluacionServicioEstudiantil } from "../entity/evaluacionServicioEstudiantil";
 import { AppDataSource } from "../data-source";
 
+/* El código está definiendo una clase llamada `EvaluacionServicioEstudiantilController`. Esta clase es
+responsable de manejar las solicitudes HTTP relacionadas con la entidad
+`EvaluacionServicioEstudiantil`. Contiene métodos estáticos para manejar diferentes operaciones
+CRUD, como recuperar todas las evaluaciones, recuperar una evaluación específica por ID, agregar una
+nueva evaluación, actualizar una evaluación existente y eliminar una evaluación. */
 class EvaluacionServicioEstudiantilController{
 
     static getAll = async (req: Request, resp: Response)=>{

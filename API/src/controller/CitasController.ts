@@ -2,6 +2,10 @@ import { Request, Response } from "express";
 import { Cita } from "../entity/cita";
 import { AppDataSource } from "../data-source";
 
+/* La `clase CitasController{` define una clase de TypeScript llamada `CitasController`. Esta clase es
+responsable de manejar las solicitudes HTTP relacionadas con la entidad `Cita`. Contiene métodos
+estáticos para manejar diferentes operaciones CRUD, como recuperar todas las citas, recuperar una
+cita por ID, agregar una nueva cita, actualizar una cita y eliminar una cita. */
 class CitasController{
 
     static getAll = async (req: Request, resp: Response)=>{
@@ -56,16 +60,16 @@ class CitasController{
 
         try {
             let IdCita;
-            IdCita = req.params["id"]; //Busca por medio de la placa
+            IdCita = req.params["id"]; 
             if (!IdCita) {
                 return resp.status(400).json({ mensaje: 'Debe indicar el ID que desea eliminar' })
             }
 
             const ElimiRepo = AppDataSource.getRepository(Cita);
-            // Buscamos la vehiculo por su placa
+            
             const EliminarCita = await ElimiRepo.findOne({ where: { IdCita, Estado: true } }); //Se verifica si esta activo para poderlo eliminar por medio de la placa
 
-            // Validamos si la factura existe en la base de datos
+           
             if (!EliminarCita) {
                 return resp.status(404).json({ mensaje: 'La marca no existe en la base de datos' });
             }

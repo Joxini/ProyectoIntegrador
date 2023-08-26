@@ -2,6 +2,11 @@ import { Request, Response } from "express";
 import { AppDataSource } from "../data-source";
 import { DatosSostenibilidadEstudiante } from "../entity/datosSostenibilidadEstudiante";
 
+/* La clase DatosSostenibilidadEstController` es una clase de controlador que maneja las solicitudes
+HTTP relacionadas con la entidad `DatosSostenibilidadEstudiante`. Contiene métodos para manejar
+diversas operaciones CRUD, como recuperar todos los datos, recuperar datos por ID, agregar datos,
+actualizar datos y eliminar datos. Estos métodos se utilizan para interactuar con el repositorio
+`DatosSostenibilidadEstudiante` y realizar las operaciones correspondientes sobre la base de datos. */
 class DatosSostenibilidadEstController{
 
     static getAll = async (req: Request, resp: Response)=>{

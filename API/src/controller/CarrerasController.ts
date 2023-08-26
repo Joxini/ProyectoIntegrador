@@ -2,6 +2,11 @@ import { Request, Response } from "express";
 import { Carrera } from "../entity/carrera";
 import { AppDataSource } from "../data-source";
 
+/* La `clase CarrerasController{` está definiendo una clase TypeScript llamada `CarrerasController`.
+Esta clase es responsable de manejar las solicitudes relacionadas con la entidad `Carrera`. Contiene
+métodos estáticos para manejar diferentes operaciones CRUD, como recuperar todos los registros de
+"Carrera", recuperar un registro de "Carrera" específico por ID, agregar un nuevo registro de
+"Carrera", actualizar un registro de "Carrera" existente y eliminar una "Carrera". registro. */
 class CarrerasController{
 
     static getAll = async (req: Request, resp: Response)=>{

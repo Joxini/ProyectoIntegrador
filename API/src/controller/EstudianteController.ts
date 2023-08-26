@@ -2,6 +2,12 @@ import { Request, Response } from "express";
 import { AppDataSource } from "../data-source";
 import { Estudiante } from "../entity/estudiante";
 
+/* La `clase EstudianteController{` define una clase de controlador para manejar solicitudes
+relacionadas con la entidad "Estudiante". Contiene varios métodos estáticos para manejar diferentes
+operaciones CRUD, como obtener todos los estudiantes, obtener un estudiante por ID, agregar un
+estudiante nuevo, actualizar un estudiante y eliminar un estudiante. Estos métodos se utilizan para
+interactuar con la fuente de datos y realizar las operaciones correspondientes sobre la entidad
+"Estudiante". */
 class EstudianteController{
 
     static getAll = async (req: Request, resp: Response)=>{
