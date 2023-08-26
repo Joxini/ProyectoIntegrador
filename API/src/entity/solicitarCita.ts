@@ -7,6 +7,7 @@ import { IsNotEmpty, MaxLength } from "class-validator";
 
 @Entity()
 
+/* La clase `SolicitarCita` se utiliza para solicitar una cita. */
 export class SolicitarCita{
 
     @PrimaryGeneratedColumn()

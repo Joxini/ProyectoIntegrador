@@ -2,6 +2,11 @@ import { Request, Response } from "express";
 import { Materias } from "../entity/materia";
 import { AppDataSource } from "../data-source";
 
+/* La `clase MateriasController{` define una clase de TypeScript llamada `MateriasController`. Esta
+clase es responsable de manejar las solicitudes relacionadas con la entidad "Materias". Contiene
+métodos estáticos para manejar diferentes operaciones CRUD, como recuperar todos los "Materias",
+recuperar una "Materia" específica por ID, agregar una nueva "Materia", actualizar una "Materia"
+existente y eliminar una "Materia". */
 class MateriasController{
 
     static getAll = async (req: Request, resp: Response)=>{

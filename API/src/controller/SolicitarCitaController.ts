@@ -2,6 +2,11 @@ import { Request, Response } from "express";
 import { SolicitarCita } from "../entity/solicitarCita";
 import { AppDataSource } from "../data-source";
 
+/* La `clase SolicitarCitaController` es una clase de TypeScript que sirve como controlador para
+manejar solicitudes relacionadas con la entidad `SolicitarCita`. Contiene métodos estáticos para
+manejar diferentes operaciones CRUD, como recuperar todos los registros "SolicitarCita", recuperar
+un registro "SolicitarCita" específico por ID, agregar un nuevo registro "SolicitarCita", actualizar
+un registro "SolicitarCita" existente y eliminar un registro "SolicitarCita". registro. */
 class SolicitarCitaController{
 
     static getAll = async (req: Request, resp: Response)=>{

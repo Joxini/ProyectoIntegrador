@@ -5,6 +5,7 @@ import { Carrera } from "./carrera";
 
 @Entity()
 
+/* La clase Materias es una clase de TypeScript. */
 export class Materias{
 
     @PrimaryGeneratedColumn()

@@ -16,6 +16,7 @@ import { RecordAcademico } from "./recordAcademicoEstudiantil";
 
 @Entity()
 
+/* La clase Estudiante se exporta y puede usarse para representar a un estudiante. */
 export class Estudiante{
 
     @PrimaryGeneratedColumn()

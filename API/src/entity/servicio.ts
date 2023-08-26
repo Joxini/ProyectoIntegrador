@@ -3,6 +3,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { SolicitarCita } from "./solicitarCita";
 
 
+/* La clase Servicios es una entidad en TypeScript. */
 @Entity()
 
 export class Servicios{

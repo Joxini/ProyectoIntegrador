@@ -2,6 +2,10 @@ import { Request, Response } from "express";
 import { RecordAcademico } from "../entity/recordAcademicoEstudiantil";
 import { AppDataSource } from "../data-source";
 
+/* La clase `RecordAcademicoEstController` es una clase de controlador que maneja las operaciones CRUD
+para la entidad `RecordAcademico` en una aplicación Express. Contiene métodos estáticos para manejar
+solicitudes HTTP, como obtener todos los registros, obtener un registro por ID, agregar un nuevo
+registro, actualizar un registro y eliminar un registro. */
 class RecordAcademicoEstController{
 
     static getAll = async (req: Request, resp: Response)=>{

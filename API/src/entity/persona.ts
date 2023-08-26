@@ -3,6 +3,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 
 @Entity()
+/* La clase Persona es una clase TypeScript. */
 export class Persona{
     
     @PrimaryGeneratedColumn()

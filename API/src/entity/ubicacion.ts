@@ -4,6 +4,7 @@ import { IsNotEmpty, MaxLength } from "class-validator";
 
 
 @Entity()
+/* La clase Ubicacion se utiliza para representar una ubicación. */
 export class Ubicacion{
 
     @PrimaryGeneratedColumn()

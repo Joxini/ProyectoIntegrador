@@ -5,6 +5,7 @@ import { Estudiante } from "./estudiante";
 import { RecordAcademico } from "./recordAcademicoEstudiantil";
 
 
+/* La clase BoletaMatricula es una clase de entidad. */
 @Entity()
 
 export class BoletaMatricula{

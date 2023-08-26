@@ -5,6 +5,7 @@ import { ExpedienteEstudiante } from "./ExpedienteEstudiante";
 import { EstudianteSalud } from "./estudianteSalud";
 
 @Entity()
+/* La clase AdecuacionCurricular se utiliza para realizar ajustes al plan de estudios. */
 export class AdecuacionCurricular{
 
     

@@ -2,6 +2,10 @@ import { Request, Response } from "express";
 import { AppDataSource } from "../data-source";
 import { Profesor } from "../entity/profesor";
 
+/* La `clase ProfesoresController {` está definiendo una clase de controlador para manejar solicitudes
+relacionadas con profesores. Contiene métodos estáticos para manejar diferentes solicitudes HTTP,
+como obtener todos los profesores, obtener un profesor por ID, agregar un nuevo profesor, actualizar
+un profesor y eliminar un profesor. */
 class ProfesoresController {
 
     static getAll = async (req: Request, resp: Response) => {

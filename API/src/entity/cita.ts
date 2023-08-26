@@ -4,6 +4,7 @@ import { Encargado } from "./encargado";
 import { SolicitarCita } from "./solicitarCita";
 
 
+/* La clase Cita es una clase de entidad. */
 @Entity()
 export class Cita{
 

@@ -2,6 +2,11 @@ import { Request, Response } from "express";
 import { AppDataSource } from "../data-source";
 import { Ubicacion } from "../entity/ubicacion";
 
+/* La `clase UbicacionController{` define una clase de controlador para manejar solicitudes
+relacionadas con la entidad `Ubicacion`. Contiene métodos estáticos para manejar diferentes
+operaciones CRUD, como obtener todas las ubicaciones, obtener una ubicación por ID, agregar una
+nueva ubicación, actualizar una ubicación y eliminar una ubicación. Estos métodos se utilizan para
+interactuar con la fuente de datos y devolver respuestas apropiadas al cliente. */
 class UbicacionController{
 
     static getAll = async (req: Request, resp: Response)=>{

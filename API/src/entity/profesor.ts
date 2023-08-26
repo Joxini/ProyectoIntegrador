@@ -7,6 +7,7 @@ import { Estudiante } from "./estudiante";
 
 @Entity()
 
+/* La clase Profesor es una clase de TypeScript. */
 export class Profesor{
 
     @PrimaryGeneratedColumn()

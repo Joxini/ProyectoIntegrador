@@ -4,6 +4,7 @@ import { Estudiante } from "./estudiante";
 import { BoletaMatricula } from "./boletaMatricula";
 
 
+/* La clase RecordAcademico es una entidad utilizada para representar registros académicos. */
 @Entity()
 
 export class RecordAcademico{

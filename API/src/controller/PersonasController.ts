@@ -4,6 +4,12 @@ import { Persona } from '../entity/persona';
 import { InicioSesion } from '../entity/inicioSesion';
 import { validate } from 'class-validator';
 
+/* La `clase PersonasController {` define una clase de controlador para manejar solicitudes
+relacionadas con la entidad `Persona`. Contiene métodos estáticos para manejar diferentes
+operaciones CRUD, como obtener todas las personas, obtener una persona por ID, agregar una nueva
+persona, actualizar una persona y eliminar una persona. Estos métodos se utilizan para manejar
+solicitudes HTTP e interactuar con la fuente de datos (base de datos) para realizar las operaciones
+correspondientes. */
 class PersonasController {
   static getAll = async (req: Request, resp: Response) => {
     try {

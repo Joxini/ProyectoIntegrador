@@ -4,6 +4,7 @@ import { Estudiante } from "./estudiante";
 import { AdecuacionCurricular } from "./adecuacionCurricular";
 
 
+/* La clase EstudianteSalud es una clase de entidad. */
 @Entity()
 export class EstudianteSalud{
 

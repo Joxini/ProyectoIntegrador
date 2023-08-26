@@ -3,6 +3,7 @@ import { IsNotEmpty } from "class-validator";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 
+/* La clase AjusteAcademico es una entidad en TypeScript. */
 @Entity()
 
 export class AjusteAcademico{

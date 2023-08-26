@@ -4,6 +4,8 @@ import { Estudiante } from "./estudiante";
 import { Profesor } from "./profesor";
 
 
+/* La clase BitacoraDocente es una entidad utilizada para rastrear y registrar información sobre los
+docentes. */
 @Entity()
 export class BitacoraDocente{
 

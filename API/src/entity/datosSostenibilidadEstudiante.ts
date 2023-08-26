@@ -6,6 +6,8 @@ import { Estudiante } from "./estudiante";
 
 @Entity()
 
+/* La clase DatosSostenibilidadEstudiante se utiliza para almacenar datos de sostenibilidad de un
+estudiante. */
 export class DatosSostenibilidadEstudiante{
 
     @PrimaryGeneratedColumn()

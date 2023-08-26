@@ -5,6 +5,7 @@ import { Estudiante } from "./estudiante";
 
 @Entity()
 
+/* La clase EvaluacionServicioEstudiantil se utiliza para evaluar los servicios estudiantiles. */
 export class EvaluacionServicioEstudiantil{
 
     @PrimaryGeneratedColumn()

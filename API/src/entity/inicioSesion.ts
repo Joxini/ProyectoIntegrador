@@ -5,6 +5,7 @@ import * as bcrypt from 'bcryptjs';
 
 @Entity()
 
+/* La clase InicioSesion se exporta en TypeScript. */
 export class InicioSesion{
 
     @Column({ primary: true })

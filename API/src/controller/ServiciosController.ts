@@ -2,6 +2,11 @@ import { Request, Response } from "express";
 import { Servicios } from "../entity/servicio";
 import { AppDataSource } from "../data-source";
 
+/* La `clase ServiciosController{` está definiendo una clase TypeScript llamada `ServiciosController`.
+Esta clase es responsable de manejar las solicitudes relacionadas con la entidad `Servicios`.
+Contiene métodos estáticos para manejar diferentes operaciones CRUD, como recuperar todos los
+"Servicios", recuperar un "Servicio" específico por ID, agregar un nuevo "Servicio", actualizar un
+"Servicio" existente y eliminar un "Servicio". */
 class ServiciosController{
 
     static getAll = async (req: Request, resp: Response)=>{

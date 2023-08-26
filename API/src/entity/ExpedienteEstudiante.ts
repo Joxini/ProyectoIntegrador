@@ -6,6 +6,7 @@ import { AdecuacionCurricular } from "./adecuacionCurricular";
 
 @Entity()
 
+/* La clase ExpedienteEstudiante se utiliza para representar el expediente académico de un estudiante. */
 export class ExpedienteEstudiante{
 
     @PrimaryGeneratedColumn()

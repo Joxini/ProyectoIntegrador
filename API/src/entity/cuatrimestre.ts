@@ -5,6 +5,7 @@ import { Carrera } from "./carrera";
 import { AdecuacionCurricular } from "./adecuacionCurricular";
 
 
+/* La clase Cuatrimestre es una entidad en TypeScript. */
 @Entity()
 export class  Cuatrimestre{
 

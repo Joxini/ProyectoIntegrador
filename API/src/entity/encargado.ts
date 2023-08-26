@@ -5,6 +5,7 @@ import { Cita } from "./cita";
 
 @Entity()
 
+/* La clase Encargado se exporta y se puede utilizar en código TypeScript. */
 export class Encargado{
 
     @PrimaryGeneratedColumn()
