@@ -4,8 +4,17 @@ import { AppDataSource } from "../data-source";
 import { AjusteAcademico } from "../entity/ajusteAcademico";
 import { AdecuacionCurricular } from "../entity/adecuacionCurricular";
 
+/* El código define una clase TypeScript llamada `AdecuacionCurricularController`. Esta clase es
+responsable de manejar las solicitudes HTTP relacionadas con la entidad `AdecuacionCurricular`.
+Contiene métodos para recuperar todos los registros de "AdecuacionCurricular", recuperar un registro
+de "AdecuacionCurricular" específico por ID, agregar un nuevo registro de "AdecuacionCurricular",
+actualizar un registro de "AdecuacionCurricular" existente y eliminar un registro de
+"AdecuacionCurricular". */
 class AdecuacionCurricularController{
 
+    /* El método `static getAll` es un método estático de la clase `AdecuacionCurricularController`. Es
+    una función asincrónica que maneja la solicitud HTTP GET para recuperar todos los registros de
+    la entidad `AdecuacionCurricular`. */
     static getAll = async (req: Request, resp: Response)=>{
 
         try {
@@ -27,6 +36,9 @@ class AdecuacionCurricularController{
     
 
 
+    /* El método `static getById` es un método estático de la clase `AdecuacionCurricularController`.
+    Es una función asíncrona que maneja la solicitud HTTP GET para recuperar un registro específico
+    de la entidad `AdecuacionCurricular` por su ID. */
     static getById = async (req: Request, resp: Response)=>{
 
       try {
@@ -57,6 +69,9 @@ class AdecuacionCurricularController{
         
     }
 
+   /* El método `static delete` es un método estático de la clase `AdecuacionCurricularController`. Es
+   una función asincrónica que maneja la solicitud HTTP DELETE para eliminar un registro específico
+   de la entidad `AdecuacionCurricular`. */
     static delete = async (req: Request, resp: Response)=>{
 
       let IdAdecuacion;

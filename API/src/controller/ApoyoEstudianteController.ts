@@ -4,6 +4,9 @@ import { AppDataSource } from "../data-source";
 
 class ApoyoEstudianteController{
 
+    /* El método `static getAll` es un método estático de la clase `ApoyoEstudianteController`. Se
+    utiliza para manejar la solicitud HTTP GET para recuperar todas las entidades `ApoyoEstudiante`
+    de la base de datos. */
     static getAll = async (req: Request, resp: Response)=>{
 
         try {
@@ -25,6 +28,9 @@ class ApoyoEstudianteController{
     
 
 
+    /* El método `static getById` es un método estático de la clase `ApoyoEstudianteController`. Se
+    utiliza para manejar la solicitud HTTP GET para recuperar una entidad `ApoyoEstudiante`
+    específica de la base de datos. */
     static getById = async (req: Request, resp: Response)=>{
 
       try {
@@ -55,6 +61,9 @@ class ApoyoEstudianteController{
         
     }
 
+    /* El método `static delete` es un método estático de la clase `ApoyoEstudianteController`. Se
+    utiliza para manejar la solicitud HTTP DELETE para eliminar una entidad específica
+    `ApoyoEstudiante` de la base de datos. */
     static delete = async (req: Request, resp: Response)=>{
 
       let IdApoyo;

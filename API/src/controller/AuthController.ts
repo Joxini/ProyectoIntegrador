@@ -5,6 +5,9 @@ import { InicioSesion } from "../entity/inicioSesion";
 import config from '../config/config';
 import { validate } from "class-validator";
 
+/* El código define una clase llamada `AuthController` con un método estático llamado `login`. El
+método `login` es una función asincrónica que toma dos parámetros: `req` (un objeto que representa
+la solicitud HTTP) y `resp` (un objeto que representa la respuesta HTTP). */
 
 class AuthController {
   static login = async (req: Request, resp: Response) => {
@@ -43,6 +46,9 @@ class AuthController {
     });
   };
 
+  /* El método `static GetAll` es una función asincrónica que maneja una solicitud GET para recuperar
+  todos los registros de la tabla `InicioSesion`. Se necesitan dos parámetros: `req` (que representa
+  la solicitud HTTP) y `resp` (que representa la respuesta HTTP). */
   static GetAll =async (req:Request, resp:Response) => {
 
     try {
@@ -58,6 +64,9 @@ class AuthController {
 
   }
   
+  /* El método `static changePassword` es una función asincrónica estática que maneja una solicitud
+  para cambiar la contraseña. Se necesitan dos parámetros: `req` (que representa la solicitud HTTP)
+  y `res` (que representa la respuesta HTTP). */
   static changePassword = async (req: Request, res: Response) => {
     const { IdPersona } = res.locals.jwtPayload;
     const { oldPassword, newPassword } = req.body;

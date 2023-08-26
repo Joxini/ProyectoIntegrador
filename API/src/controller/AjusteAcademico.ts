@@ -3,8 +3,15 @@ import { ApoyoEstudiante } from "../entity/apoyoEstudiante";
 import { AppDataSource } from "../data-source";
 import { AjusteAcademico } from "../entity/ajusteAcademico";
 
+/* El código define una clase llamada `AjusteAcademicoController` que es responsable de manejar las
+solicitudes relacionadas con la entidad `AjusteAcademico`. Contiene métodos estáticos para manejar
+diferentes métodos HTTP como `getAll`, `getById`, `add`, `update` y `delete`. Estos métodos se
+utilizan para realizar operaciones CRUD en la entidad `AjusteAcademico`. */
 class AjusteAcademicoController{
 
+    /* El método `static getAll` es un método estático de la clase `AjusteAcademicoController`. Se
+    utiliza para manejar la solicitud HTTP GET para recuperar todas las instancias de la entidad
+    "AjusteAcademico". */
     static getAll = async (req: Request, resp: Response)=>{
 
         try {
@@ -26,6 +33,9 @@ class AjusteAcademicoController{
     
 
 
+    /* El método `static getById` es un método estático de la clase `AjusteAcademicoController`. Se
+    utiliza para manejar la solicitud HTTP GET para recuperar una instancia específica de la entidad
+    `AjusteAcademico`. */
     static getById = async (req: Request, resp: Response)=>{
 
       try {
