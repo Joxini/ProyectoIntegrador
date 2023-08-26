@@ -3,6 +3,7 @@ import ExpedienteEstudianteController from "../controller/ExpedienteEstudianteCo
 
 
 
+/* El código define las rutas para una API REST utilizando el marco Express en TypeScript. */
 const routes = Router();
 
 routes.get("", ExpedienteEstudianteController.getAll);

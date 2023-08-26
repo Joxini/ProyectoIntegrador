@@ -1,6 +1,7 @@
 import { Router } from "express";
 import EncargadoController from "../controller/EncargadoController";
 
+/* Este código define las rutas para una aplicación Express.js. */
 const routes = Router();
 
 routes.get("", EncargadoController.getAll);

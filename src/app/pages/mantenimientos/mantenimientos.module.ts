@@ -7,6 +7,8 @@ import { LoginComponent } from './login/login.component';
 import { BecasComponent } from './becas/becas.component';
 // import { AdminRegisterComponent } from './register/admin-register/admin-register.component';
 
+/* El decorador `@NgModule` se utiliza para definir un módulo en Angular. Se utiliza para agrupar
+componentes, directivas, tuberías y servicios relacionados. */
 @NgModule({
   declarations: [
     MantenimientosComponent,

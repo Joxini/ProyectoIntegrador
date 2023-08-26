@@ -12,6 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 
+/* La `const lista` es una matriz que contiene todos los módulos de Angular Material que se están
+importando. Estos módulos luego se utilizan en las matrices "exportaciones" e "importaciones" del
+decorador "NgModule". */
+
 const lista = [
   MatDialogModule,
   MatIconModule,

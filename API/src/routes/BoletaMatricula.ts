@@ -1,6 +1,7 @@
 import { Router } from "express";
 import BoletaMatriculaController from "../controller/BoletaMatriculaController";
 
+/* Este código define las rutas para una API REST utilizando el marco Express en TypeScript. */
 const routes = Router();
 
 routes.get("", BoletaMatriculaController.getAll);

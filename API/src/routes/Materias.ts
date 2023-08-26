@@ -2,6 +2,7 @@ import { Router } from "express";
 import InicioSesionController from "../controller/InicioSesionController";
 import MateriasController from "../controller/MateriasController";
 
+/* Este código define las rutas para una aplicación web que utiliza el marco Express en TypeScript. */
 const routes = Router();
 
 routes.get("", MateriasController.getAll);

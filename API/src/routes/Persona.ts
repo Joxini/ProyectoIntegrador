@@ -1,6 +1,7 @@
 import { Router } from "express";
 import PersonasController from "../controller/PersonasController";
 
+/* Este código define las rutas para una API RESTful utilizando el marco Express en TypeScript. */
 const routes = Router();
 
 routes.get("", PersonasController.getAll);

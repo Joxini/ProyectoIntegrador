@@ -46,6 +46,8 @@ import Adecuacion  from "./AdecuacionCurricular";
 
 
 
+/* `const route = Router();` está creando una nueva instancia de la clase `Router` desde el marco
+Express. Esta instancia de "Router" se utiliza para definir y manejar rutas para la aplicación. */
 const routes = Router();
 
 routes.use('/ExpedienteEstudiante',Expediente);

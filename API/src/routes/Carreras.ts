@@ -2,6 +2,7 @@ import { Router } from "express";
 
 import CarrerasController from "../controller/CarrerasController";
 
+/* Este código define las rutas para una aplicación web que utiliza el marco Express en TypeScript. */
 const routes = Router();
 
 routes.get("", CarrerasController.getAll);

@@ -23,6 +23,9 @@ import { AdecuacionCurricular } from "./entity/adecuacionCurricular";
 import { AjusteAcademico } from "./entity/ajusteAcademico";
 import { ExpedienteEstudiante } from "./entity/ExpedienteEstudiante";
 
+/* El código crea una nueva instancia de la clase "DataSource" y la exporta como "AppDataSource". La
+clase `DataSource` la proporciona la biblioteca `typeorm` y se utiliza para configurar la conexión a
+una base de datos. */
 export const AppDataSource = new DataSource({
   type: "mysql",
   host: "localhost",

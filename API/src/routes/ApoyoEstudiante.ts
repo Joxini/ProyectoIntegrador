@@ -2,6 +2,7 @@ import { Router } from "express";
 import ApoyoEstudianteController from "../controller/ApoyoEstudianteController";
 
 
+/* Este código define las rutas para una aplicación Express.js. */
 const routes = Router();
 
 routes.get("", ApoyoEstudianteController.getAll);
