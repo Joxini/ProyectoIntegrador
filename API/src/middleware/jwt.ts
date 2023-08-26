@@ -2,6 +2,9 @@ import { NextFunction, Request, Response } from "express";
 import * as jwt from "jsonwebtoken";
 import config from "../config/config"
 
+/* El código define y exporta una función llamada `checkjwt`. Esta función toma tres parámetros: `req`,
+`res` y `next`, que son objetos que representan la solicitud HTTP, la respuesta y la siguiente
+función de middleware en la cadena, respectivamente. */
 export const checkjwt = (req: Request, res: Response, next: NextFunction) => {
   const token = <string>req.headers["token"];
 

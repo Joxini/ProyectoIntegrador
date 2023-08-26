@@ -4,6 +4,8 @@ import { InicioSesion } from "../entity/inicioSesion";
 
 
 
+/* El código define y exporta una función llamada `checkRoles`. Esta función toma una matriz de cadenas
+llamadas "roles" como parámetro. */
 export const checkRoles = (roles: Array<string>) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     const { IdPersona } = res.locals.payload;
